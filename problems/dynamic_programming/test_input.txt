@@ -1,0 +1,15 @@
+
+
+Def rec(arr, left, right, target): 
+	if left >= right
+		return 
+	middle = (left + right)//2
+	if arr[middle] == target:
+		return True
+	elif target < arr[middle]:
+		rec(arr, left, middle, target)	
+	else target < arr[middle]:
+		rec(arr, left, middle, target)
+Def  binary_search(arr, value):
+
+	rec(arr, 0, len(arr)- 1, value)
